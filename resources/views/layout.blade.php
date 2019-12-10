@@ -30,6 +30,7 @@
     </div>
 
     </nav>
+    <script src="nav.js"></script>
 </header>
 
 @yield('content')
