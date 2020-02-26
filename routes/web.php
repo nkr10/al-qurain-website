@@ -12,5 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('home');
+    return view('home1');
 });
+
+Route::get('/services', 'MachinesController@index');

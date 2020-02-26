@@ -110,3 +110,32 @@ nav{
     transform: translate(-5px, -6px);
 }
 
+.wide {
+        max-width: 150px;
+        max-height: 100px;
+    }
+.description
+{
+    font-family: Roboto, serif;
+    position: absolute;
+    top: 95%;
+    /*top:800px;*/
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+
+.services
+{
+    position: relative;
+}
+
+.carousel-caption h5 {
+    font-size: 50px;
+}
+
+.carousel-caption p {
+    font-size: 24px;
+}
+
+
