@@ -1,60 +1,54 @@
-@extends('layout1')
+@extends('layout')
 
 @section('title', 'Al-Qurain Al-Ahlia')
 
 @section('content')
-    <div class="slidershow middle">
-        <div class="slides">
-            <input type="radio" name="r" id="r1" checked>
-            <input type="radio" name="r" id="r2" checked>
-            <input type="radio" name="r" id="r3" checked>
-            <input type="radio" name="r" id="r4" checked>
-            <input type="radio" name="r" id="r5" checked>
 
-            <div class="slide s1">
-                <img src={{ asset('images/image1.jpg') }} alt="">
-                <h2>Project 1 Title</h2>
 
+    <!--carousel-->
+    <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src={{ asset('images/image2.jpg') }} class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>We build safely, sustainably and with certainty</h5>
+                </div>
             </div>
-            <div class="slide">
-                <img src={{ asset('images/image2.jpg') }} alt="">
-                <h2>Project 2 Title</h2>
-
+            <div class="carousel-item">
+                <img src={{ asset('images/image3.jpg') }} class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>We make places better for generations to come</h5>
+                </div>
             </div>
-            <div class="slide">
-                <img src={{ asset('images/img4.jpg') }} alt="">
-                <h2>Project 3 Title</h2>
-
-            </div>
-            <div class="slide">
-                <img src={{ asset('images/image4.jpg') }} alt="">
-                <h2>Project 4 Title</h2>
-
-            </div>
-            <div class="slide">
-                <img src={{ asset('images/image5.jpg') }} alt="">
-                <h2>Project 5 Title</h2>
-
+            <div class="carousel-item">
+                <img src={{ asset('images/image5.jpg') }} class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>We are Kuwait's most innovative construction company</h5>
+                </div>
             </div>
         </div>
+        <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
 
-        <div class="navigation">
-            <label for="r1" class="bar"></label>
-            <label for="r2" class="bar"></label>
-            <label for="r3" class="bar"></label>
-            <label for="r4" class="bar"></label>
-            <label for="r5" class="bar"></label>
+    <!--jumbotron-->
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <!--h1 class="display-4">Fluid jumbotron</h1-->
+            <img src={{ asset('images/logo.png') }} alt="logo-image" class="logo-image">
+            <p class="lead">QAC the company for general Trading & Contracting W.L.L. was established in 2004 to provide several services in the project, includes civil, electrical, mechanical services (in the range of constructing steel structures and pipelines for gas, oil & petrochemicals.) and welding projects as a primer contractor. </p>
         </div>
-    </div>
-    <div class="description">
-        <h2>Who we are</h2>
-        <p>Friendship contrasted solicitude insipidity in introduced literature it. He seemed denote except as oppose do spring my. Between any may mention evening age shortly can ability regular. He shortly sixteen of colonel colonel evening cordial to. Although jointure an my of mistress servants am weddings.
-        </p>
-
-    </div>
-
-    <div class="services">
-        <h2>Services</h2>
     </div>
 
 

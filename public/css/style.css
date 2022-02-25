@@ -1,30 +1,66 @@
-.navbar-custom {
+html,body{
+    overflow-x: hidden;
+}
+
+.navbar-brand{
+    padding-left: 20px;
+}
+
+/*--navigation bar--*/
+
+/*.navbar-custom {
     background-color: #7499CE;
     background-image: none;
     background-repeat: no-repeat;
+}*/
+
+#navbarSupportedContent{
+    padding: 30px;
 }
 
 .nav-item
 {
-    padding: 5px 5px 10px 10px;
+    padding-right: 15px;
+    padding-left: 15px;
 }
 
 .nav-link{
     letter-spacing: 2px;
     font-size: 18px;
+    /*width: 20%;*/
+}
+
+/*--search bar--*/
+#searchBarContainer{
+    padding-top: 10px;
+}
+
+.form-control:focus{
+    box-shadow: none !important;
+    border-color: #848b8e !important;
+}
+
+.btn-primary{
+    background-color: #848b8e !important;
+    border-color: #848b8e !important;
+    letter-spacing: 2px !important;
+}
+
+.btn-primary:focus{
+    box-shadow: none !important;
+    background-color: #565d60 !important;
 }
 
 /*--carousel--*/
 
-
 /*--jumbotron--*/
 .container  img {
     display: block;
-    margin: 0px auto;
+    margin: 0 auto;
     width: 20%;
 }
 
-.jumbotron {
+.jumbotron{
     background-color: #83c4ce;
 }
 
@@ -51,18 +87,18 @@
     background-color: black;
 }
 
-.row
+/*.row
 {
     padding: 50px;
     background-color: #83c4ce;
-}
+}*/
 
-form
+/*form
 {
     padding-top: 50px;
     padding-left: 500px;
     padding-right: 500px;
-}
+}*/
 
 .project-image
 {
