@@ -7,13 +7,6 @@ html,body{
 }
 
 /*--navigation bar--*/
-
-/*.navbar-custom {
-    background-color: #7499CE;
-    background-image: none;
-    background-repeat: no-repeat;
-}*/
-
 #navbarSupportedContent{
     padding: 30px;
 }
@@ -43,7 +36,7 @@ html,body{
 .btn-primary{
     background-color: #848b8e !important;
     border-color: #848b8e !important;
-    letter-spacing: 2px !important;
+    /*letter-spacing: 2px !important;*/
 }
 
 .btn-primary:focus{
@@ -51,10 +44,16 @@ html,body{
     background-color: #565d60 !important;
 }
 
-/*--carousel--*/
+/*--heading--*/
+h1 {
+    padding: 3%;
+    background-color: #83c4ce;
+    text-align: center;
+}
 
+/*============================================---Home page---============================================*/
 /*--jumbotron--*/
-.container  img {
+.container img {
     display: block;
     margin: 0 auto;
     width: 20%;
@@ -62,14 +61,13 @@ html,body{
 
 .jumbotron{
     background-color: #83c4ce;
+
 }
+
+/*--carousel--*/
 
 .carousel-caption h5 {
     font-size: 32px;
-}
-
-.carousel-caption p {
-    font-size: 18px;
 }
 
 .card
@@ -93,16 +91,36 @@ html,body{
     background-color: #83c4ce;
 }*/
 
-/*form
-{
-    padding-top: 50px;
-    padding-left: 500px;
-    padding-right: 500px;
-}*/
-
 .project-image
 {
     max-height: 500px;
     max-width: 700px;
     margin: 50px;
 }
+
+/*============================================---Contact page---============================================*/
+/*--form--*/
+div.form {
+    display: block;
+    text-align: center;
+}
+
+.contact-form {
+    margin-top: 20px;
+    width: 600px;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+.form-group{
+    padding: 3px;
+}
+
+.contact-form button{
+    margin-left: 3px;
+}
+
+
+

@@ -27,17 +27,14 @@
             <!--<li class="nav-item active">
                 <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
             </li>-->
-            <!--li class="nav-item">
-                <a class="nav-link" href="/">Home</a>
-            </li-->
             <li class="nav-item">
                 <a class="nav-link" href="/about">About</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="/services">Services</a>
+                <a class="nav-link" href="/projects">Projects</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="/projects">Projects</a>
+                <a class="nav-link" href="/machines">Machines</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="/contact">Contact</a>
