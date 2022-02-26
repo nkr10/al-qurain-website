@@ -11,12 +11,15 @@
 |
 */
 
-Route::view('/', 'home');
-Route::view('/about', 'about');
-Route::view('/contact', 'contact');
+Route::view('', 'home');
+Route::view('about', 'about');
+Route::view('contact', 'contact');
+
+Route::get('machines', 'MachinesPageController@index')->name('machines');
+//Route::get('machines', 'MachineController@index');
 
 
-Route::get('/services', 'MachinesController@index');
+/*Route::get('/services', 'MachinesController@index');
 Route::get('/projects', 'ProjectsController@index');
-Route::get('/projects/{project}', 'ProjectsController@show');
+Route::get('/projects/{project}', 'ProjectsController@show');*/
 

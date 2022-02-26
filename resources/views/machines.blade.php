@@ -1,27 +1,27 @@
 @extends('layout')
 
-@section('title', 'Al-Qurain Al-Ahlia')
+@section('title', 'Machines')
 
 @section('content')
-    <div class="card mb-4 shadow-sm">
-        <div class="card-body">
-            <div class="row">
-                @forelse($machines as $machine)
-                    <div class="col-md-6 mt-3">
-                        <div class="card" style="...">
-                            <img src="{{ $machine->image_path }}" class="card-img-top img-fluid" alt="...">
+    <h1>Machines</h1>
+
+    <section class="gallery">
+        <div class="container-fluid">
+            <div class="row justify-content-center">
+                @foreach ($machines as $machine)
+                    <div class="col-lg-4 mb-3">
+                        <div class="card">
+                            <div class="image-container"><img src="img_vehicles/{{ $machine->image_path }}" class="card-img-top" alt="{{ $machine->name }}"></div>
+
                             <div class="card-body">
                                 <h5 class="card-title">{{ $machine->name }}</h5>
-                                <p class="card-text">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
-                                <a href="/services/{{ $machine->id }}" class="btn btn-primary">Learn more</a>
+                                <p class="card-text">{{ $machine->description }}</p>
                             </div>
                         </div>
                     </div>
-                @empty
-                    No project found.
-                @endforelse
+                @endforeach
             </div>
         </div>
-    </div>
+    </section>
 
 @endsection

@@ -14,10 +14,11 @@ class CreateMachinesTable extends Migration
     public function up()
     {
         Schema::create('machines', function (Blueprint $table) {
-            $table->bigIncrements('id');
-            $table->timestamps();
-            $table->string('name');
+            $table->increments('id');
+            $table->string('name')->unique();
+            $table->string('description');
             $table->string('image_path');
+            $table->timestamps();
         });
     }
 

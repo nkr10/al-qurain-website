@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\Storage;
 
 class Machine extends Model
 {
-    protected $fillable = ['image_path'];
+    //protected $fillable = ['image_path'];
 
 
 }
