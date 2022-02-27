@@ -8,9 +8,9 @@
     <section class="gallery">
         <div class="container-fluid">
             <div class="row justify-content-center">
-                @foreach ($machines as $machine)
+                @forelse ($machines as $machine)
                     <div class="col-lg-4 mb-3">
-                        <div class="card">
+                        <div class="card reveal">
                             <div class="image-container"><img src="img_vehicles/{{ $machine->image_path }}" class="img-fluid card-img-top" alt="{{ $machine->name }}"></div>
 
                             <div class="card-body">
@@ -19,9 +19,38 @@
                             </div>
                         </div>
                     </div>
-                @endforeach
+                @empty
+                    No machines found.
+                @endforelse
             </div>
         </div>
     </section>
+
+    <script type="text/javascript">
+        window.addEventListener('scroll', reveal);
+
+            function reveal(){
+                let reveals = document.querySelectorAll('.reveal');
+
+                for (let i = 0; i < reveals.length; i++){
+
+                    let windowHeight = window.innerHeight;
+                    let revealTop = reveals[i].getBoundingClientRect().top;
+                    let revealPoint = 20;
+
+                    if(revealTop < windowHeight - revealPoint){
+                        reveals[i].classList.add('active');
+                    }
+
+                    else{
+                        reveals[i].classList.remove('active');
+                    }
+                }
+
+
+            }
+
+    </script>
+
 
 @endsection

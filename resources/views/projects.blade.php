@@ -1,26 +1,48 @@
 @extends('layout')
 
-@section('title', 'Al-Qurain Al-Ahlia')
+@section('title', 'Projects')
 
 @section('content')
-    <div class="card mb-4 shadow-sm">
-        <div class="card-body">
-            <div class="row">
-                @forelse($projects as $project)
-                    <div class="col-md-6 mt-3">
-                        <div class="card" style="...">
-                            <img src="{{ $project->image_path }}" class="card-img-top img-fluid" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">{{ $project->title }}</h5>
-                                <p class="card-text">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
-                                <a href="/projects/{{ $project->id }}" class="btn btn-primary">Learn more</a>
-                            </div>
-                        </div>
+    <h1>Projects</h1>
+    <div class="row justify-content-center">
+        @forelse($projects as $project)
+            <div class="col-lg-5 mb-3">
+                <div class="project-image-container reveal">
+                    <img src="img_prj/{{ $project->image_path }}" class="project-image" alt="{{ $project->name }}">
+                    <div class="project-image-overlay">
+                        <h5 class="image-title">{{ $project->name }}</h5>
+                        <p class="image-text">{{ $project->description }}</p>
                     </div>
-                @empty
-                No project found.
-                @endforelse
+                </div>
             </div>
-        </div>
+        @empty
+            No projects found.
+        @endforelse
     </div>
+
+    <script type="text/javascript">
+        window.addEventListener('scroll', reveal);
+
+        function reveal(){
+            let reveals = document.querySelectorAll('.reveal');
+
+            for (let i = 0; i < reveals.length; i++){
+
+                let windowHeight = window.innerHeight;
+                let revealTop = reveals[i].getBoundingClientRect().top;
+                let revealPoint = 20;
+
+                if(revealTop < windowHeight - revealPoint){
+                    reveals[i].classList.add('active');
+                }
+
+                else{
+                    reveals[i].classList.remove('active');
+                }
+            }
+
+
+        }
+
+    </script>
 @endsection

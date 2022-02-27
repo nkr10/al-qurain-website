@@ -51,12 +51,16 @@ html,body{
 
 /*--heading--*/
 h1 {
-    padding: 3%;
+    padding: 2%;
     /*background-color: #d7dee1;*/
-    background-color: #ffd442;
+    /*background-color: #10858e;*/
+    background-color: #7eb2bb;
     text-align: center;
-    color: #515151;
-    text-shadow: #a4afb4 1px 0 2px;
+    color: white;
+    /*text-shadow: #a4afb4 1px 0 1px;*/
+    /*color: #292929;*/
+    font-weight: lighter;
+    letter-spacing: 2px;
 }
 
 /*============================================---Home page---============================================*/
@@ -68,20 +72,18 @@ h1 {
 }
 
 .jumbotron{
-    /*background-color: #83c4ce;*/
-    background-color: #ffd442;
+    background-color: #83c4ce;
+    /*background-color: #ffd442;*/
     color: black;
 
 }
 
 /*--carousel--*/
-
 .carousel-caption h5 {
     font-size: 32px;
 }
 /*============================================---Machines page---============================================*/
 /*--machine container--*/
-
 .image-container{
     margin-left: auto;
     margin-right: auto;
@@ -112,14 +114,60 @@ h1 {
     margin: 50px;
 }
 
-    /*======================================
+.reveal{
+    position: relative;
+    transform: translateY(20px);
+    opacity: 0;
+    transition: all 1s ease;
+}
 
-    .project-image
-    {
-        max-height: 500px;
-        max-width: 700px;
-        margin: 50px;
-    }*/
+.reveal.active{
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+/*============================================---Projects page---============================================*/
+
+.project-image-container{
+    position: relative;
+    margin: 30px auto 5px auto;
+}
+
+.project-image{
+    display: block;
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.project-image-overlay{
+    padding: 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #ffffff;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.project-image-overlay > * {
+    transform: translateY(20px);
+    transition: transform 0.5s;
+}
+
+.project-image-overlay:hover {
+    opacity: 1;
+}
+
+.project-image-overlay > * {
+    transform: translateY(0);
+}
+
+
+
 
 /*============================================---Contact page---============================================*/
 /*--form--*/

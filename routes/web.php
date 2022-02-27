@@ -16,6 +16,7 @@ Route::view('about', 'about');
 Route::view('contact', 'contact');
 
 Route::get('machines', 'MachinesPageController@index')->name('machines');
+Route::get('projects', 'ProjectsPageController@index')->name('projects');
 //Route::get('machines', 'MachineController@index');
 
 
