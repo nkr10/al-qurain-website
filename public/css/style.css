@@ -64,18 +64,26 @@ h1 {
 }
 
 /*============================================---Home page---============================================*/
-/*--jumbotron--*/
-.container img {
+/*--bottom heading--*/
+.logo-image{
+    /*margin: 0 auto;*/
     display: block;
-    margin: 0 auto;
-    width: 20%;
+    margin: 0 auto 0 auto;
 }
 
-.jumbotron{
+.heading-container{
     background-color: #83c4ce;
     /*background-color: #ffd442;*/
     color: black;
+    margin-bottom: 0;
+}
 
+.lead{
+    display: block;
+    margin: 0 auto;
+    padding-right: 10%;
+    padding-left: 10%;
+    padding-bottom: 5%;
 }
 
 /*--carousel--*/
@@ -94,7 +102,7 @@ h1 {
     margin: 5%;
     -webkit-border-radius: 0;
     background-color: #f5fcff;
-    box-shadow: 0 0 20px 2px rgba(0, 0, 0, .1)
+    box-shadow: 0 0 15px 2px rgba(0, 0, 0, .1)
 }
 
 .card-img-top{

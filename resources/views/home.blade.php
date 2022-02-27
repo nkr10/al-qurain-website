@@ -43,12 +43,12 @@
     </div>
 
     <!--jumbotron-->
-    <div class="jumbotron jumbotron-fluid">
-        <div class="container">
+    <div class="heading-container">
+        <!--div class="container"-->
             <!--h1 class="display-4">Fluid jumbotron</h1-->
             <img src={{ asset('images/logo.png') }} alt="logo-image" class="logo-image">
             <p class="lead">QAC the company for general Trading & Contracting W.L.L. was established in 2004 to provide several services in the project, includes civil, electrical, mechanical services (in the range of constructing steel structures and pipelines for gas, oil & petrochemicals.) and welding projects as a primer contractor. </p>
-        </div>
+        <!--/div-->
     </div>
 
 
